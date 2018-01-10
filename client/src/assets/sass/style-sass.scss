@@ -1,0 +1,90 @@
+/* variables start here */
+
+$base-font-colour: #444;
+$light-gray-colour: #ddd;
+$dark-gray-colour: #999;
+
+/* variables end here */
+
+body {
+  color: $base-font-colour;
+  margin: 0px;
+}
+
+.headerBar {
+  height: 50px;
+  background-color: $light-gray-colour;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.userBox {
+  @extend .center;
+  padding: 15px;
+}
+
+.item {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.menuItem {
+  @extend .item;
+  width: 120px;
+}
+
+.activeItem {
+  background-color: $dark-gray-colour;
+}
+
+.customHeading {
+  @extend .center;
+  margin: 100px 0px;
+}
+
+.marginBottom {
+  margin-bottom: 15px;
+}
+
+.fieldRow {
+  @extend .marginBottom;
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  .myInput {
+    height: 30px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    width: 90%;
+    max-width: 400px;
+  }
+  label {
+    padding: 6px 13px;
+  }
+}
+
+.previewRow {
+  @extend .marginBottom;
+  width: 100%;
+  display: inline-flex;
+  .inputBox {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  p {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
+.previewHeading {
+  flex: 0 0 30%;
+  max-width: 30%;
+}

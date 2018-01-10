@@ -1,0 +1,25 @@
+<div class="baseMargin">
+    <h1 class="customHeading">
+        Shopping Cart Portal
+    </h1>
+
+    <form class="userBox">
+        <div class="fieldRow center">New User Registration</div>
+        <div class="fieldRow">
+            <input autofocus ng-enter="focus('password')" id="username" placeholder="User Name*" type="text" ng-model="user.username">
+        </div>
+        <div class="fieldRow">
+            <input ng-enter="focus('mobile')" id="password" placeholder="Password*" type="password" ng-model="user.password">
+        </div>
+        <div class="fieldRow">
+            <input ng-enter="focus('email')" id="mobile" placeholder="Mobile No." type="number" ng-model="user.mobile">
+        </div>
+        <div class="fieldRow">
+            <input ng-enter="register()" id="email" placeholder="Email" type="text" ng-model="user.email">
+        </div>
+        <div class="fieldRow">
+            <input class="btn-default" value="Register" type="button" ng-click="register()">
+            <input class="btn-default" value="Go Back To Login" type="reset" ui-sref="login()">
+        </div>
+    </form>
+</div>

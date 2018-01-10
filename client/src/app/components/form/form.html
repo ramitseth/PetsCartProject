@@ -1,0 +1,50 @@
+<div class="baseMargin" ng-init="resetForm()">
+    <h4 class="marginHeading">From here, you can add more pets to your cart</h4>
+    <form class="formBox center">
+        <div class="fieldRow">
+            Pet Selection Form
+        </div>
+        <div class="fieldRow">
+            <label class="myInput">Select a pet
+                <label ng-repeat="pet in petsList">
+                    <input type="radio" ng-model="myPet.petID" value="{{pet.petID}}" ng-change="petChanged(pet)"> {{pet.name}}
+                </label>
+            </label>
+        </div>
+        <div class="fieldRow">
+                <input placeholder="Cost" type="number" disabled ng-model="myPet.cost">
+            </div>
+        <div class="fieldRow">
+            <input placeholder="Quantity" type="number" ng-model="myPet.quantity" ng-change="calculatePrice()">
+        </div>
+        <div class="fieldRow">
+            <input placeholder="Total Price" type="number" disabled ng-model="myPet.price">
+        </div>
+        <div class="fieldRow">
+            <input class="btn-default" value="Add to Cart" type="button" ng-click="addToCart()">
+            <input class="btn-default" value="Reset Form" type="reset" ng-click="resetForm()">
+        </div>
+    </form>
+
+    <div class="previewBox">
+        <div class="fieldRow center">
+            Preview
+        </div>
+        <div class="previewRow">
+            <div class="previewHeading">Pet Selected:</div>
+            <div class="inputBox">{{myPet.name}}</div>
+        </div>
+        <div class="previewRow">
+                <div class="previewHeading">Cost:</div>
+                <div class="inputBox">{{myPet.cost}}</div>
+            </div>
+        <div class="previewRow">
+            <div class="previewHeading">Quantity:</div>
+            <div class="inputBox">{{myPet.quantity}}</div>
+        </div>
+        <div class="previewRow">
+            <div class="previewHeading">Total Amount:</div>
+            <div class="inputBox">{{myPet.price}}</div>
+        </div>
+    </div>
+</div>

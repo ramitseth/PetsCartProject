@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shopping Cart</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/lib/sweetalert2/sweetalert2.css">
+    <link rel="stylesheet" href="assets/css/style-css.css">
+    <link rel="stylesheet" href="assets/css/style-sass.css">
+    <!-- endinject -->
+
+    <!-- library:js -->
+    <script src="assets/lib/angular/angular.min.js"></script>
+    <script src="assets/lib/angular-aria/angular-aria.min.js"></script>
+    <script src="assets/lib/angular-resource/angular-resource.min.js"></script>
+    <script src="assets/lib/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="assets/lib/angular-ui-router/angular-ui-router.min.js"></script>
+    <script src="assets/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="assets/lib/sweetalert2/sweetalert2.min.js"></script>
+    <!-- endinject -->
+    
+</head>
+<body>
+<div ui-view></div>
+
+<!-- inject:js -->
+<script src="app/app.js"></script>
+<script src="app/routes.js"></script>
+<script src="app/components/form/form.js"></script>
+<script src="app/components/home/home.js"></script>
+<script src="app/components/login/login.js"></script>
+<script src="app/components/register/register.js"></script>
+<script src="app/shared/directives/ngEnter.js"></script>
+<script src="app/shared/factories/apiFactory.js"></script>
+<script src="app/shared/factories/homeFactory.js"></script>
+<script src="app/shared/header/header.js"></script>
+<script src="app/shared/services/headerService.js"></script>
+<!-- endinject -->
+
+</body>
+</html>

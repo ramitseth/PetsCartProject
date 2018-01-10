@@ -1,0 +1,49 @@
+<div class="baseMargin">
+    <h2>Pet List</h2>
+    <div>
+        <h4 class="marginHeading">List of pets with their prices</h4>
+        <table>
+            <thead>
+                <tr>
+                    <td>Serial Number</td>
+                    <td>Pet's Name</td>
+                    <td>Pet's Price</td>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="pet in petsList">
+                    <td>{{$index+1}}</td>
+                    <td>{{pet.name}}</td>
+                    <td>{{pet.cost}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2 class="customHeading left">My Cart</h2>
+    <div ng-hide="noPetsFound">
+        <h4 class="marginHeading">List of pets selected with total amount to be paid</h4>
+        <table>
+            <thead>
+                <tr>
+                    <td>Serial Number</td>
+                    <td>Pet's Name</td>
+                    <td>Pet's Price</td>
+                    <td>Quantity</td>
+                    <td>Total Price</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="mypet in usersPetList">
+                    <td>{{$index+1}}</td>
+                    <td>{{mypet.name}}</td>
+                    <td>{{mypet.cost}}</td>
+                    <td>{{mypet.quantity}}</td>
+                    <td>{{mypet.price}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div ng-show="noPetsFound">You have not selected any pets. Go and add some pets</div>
+</div>

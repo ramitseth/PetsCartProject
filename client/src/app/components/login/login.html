@@ -1,0 +1,17 @@
+<div class="baseMargin">
+    <h1 class="customHeading">
+        Shopping Cart Portal
+    </h1>
+    <form class="userBox">
+        <div class="fieldRow">
+            <input autofocus ng-enter="focus('password')" id = "username" placeholder="User Name" type="text" ng-model="user.username">
+        </div>
+        <div class="fieldRow">
+            <input ng-enter="login()" id="password" placeholder="Password" type="password" ng-model="user.password">
+        </div>
+        <div class="fieldRow">
+            <input class="btn-default" value="Login" type="button" ng-click="login()">
+            <input class="btn-default" value="Register" type="reset" ui-sref="register()">
+        </div>
+    </form>
+</div>

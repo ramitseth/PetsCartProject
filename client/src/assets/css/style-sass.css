@@ -1,0 +1,62 @@
+/* variables start here */
+/* variables end here */
+body {
+  color: #444;
+  margin: 0px; }
+
+.headerBar {
+  height: 50px;
+  background-color: #ddd; }
+
+.center, .userBox, .customHeading {
+  text-align: center; }
+
+.left {
+  text-align: left; }
+
+.userBox {
+  padding: 15px; }
+
+.item, .menuItem {
+  display: inline-block;
+  cursor: pointer; }
+
+.menuItem {
+  width: 120px; }
+
+.activeItem {
+  background-color: #999; }
+
+.customHeading {
+  margin: 100px 0px; }
+
+.marginBottom, .fieldRow, .previewRow {
+  margin-bottom: 15px; }
+
+.fieldRow input[type="text"],
+.fieldRow input[type="password"],
+.fieldRow input[type="number"],
+.fieldRow .myInput {
+  height: 30px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  width: 90%;
+  max-width: 400px; }
+
+.fieldRow label {
+  padding: 6px 13px; }
+
+.previewRow {
+  width: 100%;
+  display: inline-flex; }
+  .previewRow .inputBox {
+    flex: 0 0 60%;
+    max-width: 60%; }
+  .previewRow p {
+    overflow-x: auto;
+    overflow-y: hidden; }
+
+.previewHeading {
+  flex: 0 0 30%;
+  max-width: 30%; }

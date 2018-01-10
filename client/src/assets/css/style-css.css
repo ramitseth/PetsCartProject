@@ -1,0 +1,42 @@
+.menuRight {
+  float: right
+}
+
+.baseMargin {
+  margin: 10px;
+}
+
+.marginHeading {
+  margin: 50px 0px;
+}
+
+.btn-default {
+  margin: 20px 10px;
+  height: 30px;
+}
+
+table, th, td {
+  border: 1px solid #aaa;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}
+
+.formBox,
+.previewBox {
+  width: 30%;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 15px;
+  border: solid 1px #aaa;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 700px) {
+  .previewBox {
+    left: 40%;
+    position: fixed;
+  }
+}
