@@ -17,9 +17,9 @@ This project is divided into 2 parts - client(front-end) and server(back-end). M
 # Steps to run this project:
 
 # To run for the first time
-1. Open the server folder in terminal
+1. Open the `server` folder in terminal
 2. Run the command -->   <b>npm install</b>
-3. Open the client folder in terminal
+3. Open the `client` folder in terminal
 4. Run the command -->   <b>npm install</b>
  
  
